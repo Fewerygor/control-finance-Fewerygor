@@ -16,11 +16,58 @@
     />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css">
   </head>
   <body>
-    <main id="app"></main>
+    <header>
+      <nav>
+        <h1><span>Control</span> Finance</h1>
+        <button id="showRegister">Registrar novo valor</button>
+      </nav>
+    </header>
+    <main id="app">
+      <section class="filter_container">
+        <p>Resumo financeiro</p>
+        <div class="button_container">
+          <button class="button_section" id="button_todos">Todos</button>
+          <button class="button_section" id="button_entradas">Entradas</button>
+          <button class="button_section" id="button_saidas">Saídas</button>
+        </div>
+      </section>
+      <section class="result_container">
+        <p class="result_container--text">Soma dos valores</p>
+        <p class="result_container--p"></p>
+      </section>
+      <section class="list_container">
+        <ul></ul>
+      </section>
+    </main>
+    <dialog class="modal__controller">
+      <div class="modal__container">
+        <h4>Registro de valor</h4>
+        <button id="closeRegister">X</button>
+        <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+        <span class="valor">Valor</span>
+        <div class="inputValue">
+          <span>R$</span>
+          <input type="number" placeholder="00,00" id = "amount">
+        </div>
+        <form>
+          <span>Tipo de Valor</span>
+          <input hidden type="radio" value="0" name="category_Id" id="entrada">
+          <label for="entrada">Entrada</label>
+          <input hidden type="radio" value="1" name="category_Id" id="saida">
+          <label for="saida">Saída</label>
+        </form>
+        <div class="action_button">
+          <button class="cancelar">Cancelar</button>
+          <button id="insertValue">Inserir valor</button>
+        </div>
+      </div>
+    </dialog>
     <script src="./src/scripts/modal.js"></script>
     <script src="./src/scripts/valuesData.js"></script>
     <script src="./src/scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/ec784a76ec.js" crossorigin="anonymous"></script>
   </body>
 </html>
