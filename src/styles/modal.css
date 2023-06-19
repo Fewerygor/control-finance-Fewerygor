@@ -1,8 +1,11 @@
 .modal__controller {
     position: relative;
     padding: 0;
+    animation: appearsFromAbove 0.5s;
     border: none;
     border-radius: var(--radius-1);
+    top: 160px;
+    left: 500px;
 }
 
 .modal__container {
@@ -185,4 +188,14 @@ input[type="radio"]:checked + label {
     background: var(--color-brand-2);
     border: 1.5px solid var(--color-brand-2);
     border-radius: var(--radius-1);
+}
+
+@keyframes appearsFromAbove {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

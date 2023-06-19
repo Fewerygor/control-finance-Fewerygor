@@ -71,12 +71,14 @@ h1 {
     font-weight: var(--font-weight-1);
     padding: 3px 7px;
 }
+
 .button_section:hover {
     color: var(--color-brand-1);
     background: var(--color-brand-3);
     border: 2px solid var(--color-brand-1);
     border-radius: var(--radius-1);
 }
+
 
 .result_container {
     display: flex;
@@ -88,7 +90,7 @@ h1 {
     border: 1.5px solid var(--color-grey-4);
     border-radius: var(--radius-1);
     padding: 7px 11px;
-    width: 50%;
+    width: 47.1875rem;
     top: 200px;
     left: 308px;
 }

@@ -1,23 +1,24 @@
 /* Desenvolva sua lógica aqui */
-const valuesCategory = ["Entrada", "Saída"];
+import {valuesCategory, insertedValues} from "./valuesData.js";
+// const valuesCategory = ["Entrada", "Saída"];
 let nextId = 0;
-let insertedValues = [
-    {
-      id: nextId++,
-      value: 19.0,
-      categoryID: 0,
-    },
-    {
-      id: nextId++,
-      value: 400.0,
-      categoryID: 1,
-    },
-    {
-      id: nextId++,
-      value: 193.0,
-      categoryID: 1,
-    },
-  ];
+// let insertedValues = [
+//     {
+//       id: nextId++,
+//       value: 19.0,
+//       categoryID: 0,
+//     },
+//     {
+//       id: nextId++,
+//       value: 400.0,
+//       categoryID: 1,
+//     },
+//     {
+//       id: nextId++,
+//       value: 193.0,
+//       categoryID: 1,
+//     },
+//   ];
 
 
 let insertedValuesfiltered = insertedValues;

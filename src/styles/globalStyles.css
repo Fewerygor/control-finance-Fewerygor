@@ -48,14 +48,21 @@ body {
   position: relative;
 }
 
-.container {
+/* .container {
   max-width: 43rem;
   margin: 0 auto;
-}
+} */
 
-@media (max-width: 700px) {
-  .container {
-    max-width: 43rem;
-    margin: 0 1rem;
+@media (max-width: 600px) {
+  nav {
+    padding: 30px 80px;
+  }
+  
+  #showRegister {
+    display: flex;
+    position: absolute;
+    width: 343px;
+    height: 32px;
+
   }
 }
